@@ -3,7 +3,7 @@
   "short_name": "EstudeUp",
   "description": "Resumos da comunidade, tutor que resolve pela foto, flashcards com voz e um plano de estudo até o dia da prova. Simulados e redação do ENEM.",
   "lang": "pt-BR",
-  "start_url": "./",
+  "start_url": "app.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F5F8FE",
