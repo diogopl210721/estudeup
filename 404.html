@@ -10,6 +10,7 @@
     var dest = null;
     if (!seg.length) dest = '/';
     else if (seg[0] === 'estudeup' || seg[0] === 'saidaescola' || seg[0] === 'escola') dest = '/escola/' + location.hash;
+    else if (['escolas','para-escolas','contratar','patrocinar','patrocinio'].indexOf(seg[0]) >= 0) dest = '/escolas.html' + (seg[0].indexOf('patroc') === 0 ? '#patrocinio' : '');
     else if (seg[0] === 'dds') dest = '/escola/#/dds';
     else if (seg[0] === 'assinar' || seg[0] === 'plano') dest = '/escola/#/assinar';
     else if (seg[0] === 'estudemais' || seg[0] === 'estudar') dest = '/' + location.hash;
