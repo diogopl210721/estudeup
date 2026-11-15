@@ -265,7 +265,14 @@ section{padding:clamp(70px,9vw,120px) 0}
 .contato .canais{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
 @media(max-width:900px){.contato .g{grid-template-columns:1fr;gap:30px}.form .row{grid-template-columns:1fr}}
 
-footer{padding:40px 0 60px;color:var(--muted);font-size:15px;border-top:1px solid var(--linha)}
+.zapbox{background:var(--giz);color:var(--tinta);border-radius:30px;padding:40px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.zapbox .zl{margin:0;font-weight:700;color:#4a5378}
+.zapbox .zn{font:900 clamp(30px,3.6vw,46px)/1 var(--disp);white-space:nowrap;letter-spacing:-.03em;text-decoration:none;color:var(--tinta)}
+.zapbox .btn.pri{background:#25D366;color:#06301a;box-shadow:0 5px 0 #179c4a;margin-top:6px}
+.zapbox .zs{margin:6px 0 0;font-size:16px;color:#4a5378}
+.zapbox .zs a{color:var(--azul);font-weight:800}
+.planos .g.g2{grid-template-columns:1fr 1fr 1fr}
+footer{padding:40px 0 90px;color:var(--muted);font-size:15px;line-height:1.7;border-top:1px solid var(--linha)}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 footer a{color:var(--muted)}
 .toast{visibility:hidden;position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--giz);color:var(--tinta);padding:12px 18px;border-radius:12px;font-weight:700;transition:transform .3s;z-index:60}
@@ -281,7 +288,6 @@ footer a{color:var(--muted)}
   .rev{opacity:1;transform:none}
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body data-pagina="escolas">
 
@@ -304,8 +310,8 @@ footer a{color:var(--muted)}
       <h1>A escola inteira <span class="riscado">em um</span> app só.</h1>
       <p class="lead">Saída com chamada no telão, boletim e comunicados, sala de aula e estudo com IA. Pais, alunos, professores e direção no mesmo lugar, cada um com o seu acesso.</p>
       <div class="ctas">
-        <a class="btn pri" href="#contato">Quero para a minha escola</a>
-        <a class="btn sec" href="#patrocinio">Quero patrocinar</a>
+        <a class="btn pri" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20conhecer%20o%20EstudeUp%20para%20a%20minha%20escola." target="_blank" rel="noopener">Quero para a minha escola</a>
+        <a class="btn sec" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20patrocinar%20o%20EstudeUp." target="_blank" rel="noopener">Quero patrocinar</a>
       </div>
       <p class="nota">Funciona no celular, no computador e na TV da escola. <a href="/colegio-aurora">Ver a escola de demonstração</a></p>
     </div>
@@ -386,20 +392,20 @@ footer a{color:var(--muted)}
 
 <section class="planos" id="planos">
   <div class="wrap">
-    <h2 class="rev">Preço simples. Pago por Pix.</h2>
-    <p class="lead" style="margin-top:18px">O plano libera os módulos para todos: direção, professores, pais e alunos, com a IA incluída. Pagou, liberou na hora.</p>
-    <div class="g">
-      <div class="plano"><h3>Mensal</h3><div class="v" id="lp-mensal"><small>valor na apresentação</small></div><p class="obs">Sem fidelidade.</p>
+    <h2 class="rev">Planos mensais e anuais.</h2>
+    <p class="lead" style="margin-top:18px">Temos planos mensais e anuais. O plano libera os módulos para todos: direção, professores, pais e alunos, com a IA incluída. Pagou por Pix, liberou na hora.</p>
+    <div class="g g2">
+      <div class="plano"><h3>Planos mensais</h3><div class="v" style="font-size:clamp(34px,3.6vw,46px)">Mensal</div><p class="obs">Sem fidelidade.</p>
         <ul><li>Todos os módulos contratados</li><li>Pais, alunos e equipe sem custo extra</li><li>IA para alunos e pais</li></ul>
-        <a class="btn sec" href="#contato">Falar com a gente</a></div>
-      <div class="plano anual"><h3>Anual</h3><div class="v" id="lp-anual"><small>valor na apresentação</small></div><p class="obs" id="lp-economia">Mais barato que 12 meses.</p>
+        <a class="btn sec" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener">Consultar valores</a></div>
+      <div class="plano anual"><h3>Planos anuais</h3><div class="v" style="font-size:clamp(34px,3.6vw,46px)">Anual</div><p class="obs">Mais vantajoso que o mensal.</p>
         <ul><li>Tudo do mensal</li><li>Ajuda na implantação</li><li>Telão da saída configurado com a escola</li></ul>
-        <a class="btn pri" href="#contato">Quero o anual</a></div>
-      <div class="plano rede"><h3>Redes e escolas grandes</h3><div class="v" style="font-size:34px">Sob medida</div><p class="obs">Várias unidades num painel só.</p>
+        <a class="btn pri" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener">Consultar valores</a></div>
+      <div class="plano rede"><h3>Redes e escolas grandes</h3><div class="v" style="font-size:clamp(34px,3.6vw,46px)">Sob medida</div><p class="obs">Várias unidades num painel só.</p>
         <ul><li>Condições por volume</li><li>Implantação acompanhada</li><li>Relatórios por unidade</li></ul>
-        <a class="btn sec" href="#contato">Pedir proposta</a></div>
+        <a class="btn sec" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener">Pedir proposta</a></div>
     </div>
-    <div id="planos-db" hidden></div>
+    
   </div>
 </section>
 
@@ -408,7 +414,7 @@ footer a{color:var(--muted)}
     <div>
       <h2 class="rev">Sua escola na frente de quem está estudando.</h2>
       <p class="lead">Estudantes do Brasil inteiro usam o EstudeUp para estudar por conta própria. Como patrocinadora, sua escola aparece para eles, sempre identificada como patrocínio.</p>
-      <a class="btn pri" href="#contato" onclick="interessePatrocinio()">Quero patrocinar</a>
+      <a class="btn pri" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20patrocinar%20o%20EstudeUp." target="_blank" rel="noopener">Quero patrocinar</a>
     </div>
     <dl>
       <dt>Destaque na vitrine</dt><dd>Página da escola e oportunidades (matrículas, bolsas, aula experimental) em destaque no app.</dd>
@@ -447,35 +453,16 @@ footer a{color:var(--muted)}
   <div class="wrap g">
     <div>
       <h2>Vamos conversar?</h2>
-      <p class="lead" style="margin-top:20px">Para contratar ou patrocinar, conte um pouco da sua escola. A gente responde pelo WhatsApp ou e-mail e mostra o app funcionando.</p>
+      <p class="lead" style="margin-top:20px">Para contratar, consultar os planos ou patrocinar, chame no WhatsApp. A gente mostra o app funcionando com uma escola de demonstração.</p>
       <div class="canais">
         <a class="btn sec" href="/colegio-aurora">Ver a escola de demonstração</a>
       </div>
     </div>
-    <div>
-      <form class="form" id="form-interesse" novalidate>
-        <div class="row">
-          <div class="field"><label for="f-inst">Nome da escola</label><input id="f-inst" name="instituicao" maxlength="120" autocomplete="organization" required></div>
-          <div class="field"><label for="f-resp">Seu nome</label><input id="f-resp" name="responsavel" maxlength="80" autocomplete="name" required></div>
-          <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" maxlength="160" autocomplete="email" required></div>
-          <div class="field"><label for="f-tel">WhatsApp</label><input id="f-tel" name="telefone" type="tel" maxlength="20" autocomplete="tel" placeholder="(41) 99999-9999" required></div>
-          <div class="field"><label for="f-cidade">Cidade</label><input id="f-cidade" name="cidade" maxlength="80" autocomplete="address-level2" required></div>
-          <div class="field"><label for="f-tipo">Tipo de instituição</label>
-            <select id="f-tipo" name="tipo" required><option value="">Escolha</option><option value="escola">Escola</option><option value="cursinho">Cursinho / pré-vestibular</option>
-            <option value="idiomas">Escola de idiomas</option><option value="profissionalizante">Curso profissionalizante</option><option value="faculdade">Faculdade</option>
-            <option value="reforco">Reforço escolar</option><option value="outro">Outro</option></select></div>
-        </div>
-        <div class="field"><label for="f-msg">Mensagem <span class="opt">(opcional)</span></label><textarea id="f-msg" name="mensagem" maxlength="1000" placeholder="Quantos alunos, quais séries, quais módulos interessam ou se é patrocínio"></textarea></div>
-        <div class="escondido" aria-hidden="true"><label for="f-site">site</label><input id="f-site" name="site_url" tabindex="-1" autocomplete="off"></div>
-        <label class="consent"><input type="checkbox" name="consentimento" id="f-consent"><span id="texto-consentimento">Autorizo o EstudeUp a usar estes dados só para responder a esta solicitação e apresentar a parceria.</span></label>
-        <p class="priv"><a href="privacidade.html">Aviso de privacidade</a></p>
-        <p class="aviso-moderacao" id="form-erro" role="alert" hidden></p>
-        <button class="btn" id="btn-interesse" type="submit">Enviar contato</button>
-      </form>
-      <div class="pub-ok" id="form-ok" hidden role="status">
-        <h3>Recebemos seu contato!</h3>
-        <p>A gente vai falar com você pelo WhatsApp ou e-mail para marcar a apresentação.</p>
-      </div>
+    <div class="zapbox">
+      <p class="zl">Fale direto comigo no WhatsApp</p>
+      <a class="zn" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener">(41) 99154-2931</a>
+      <a class="btn pri" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20conhecer%20o%20EstudeUp%20para%20a%20minha%20escola." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <p class="zs">Ou conheça meu trabalho em <a href="https://www.ddsinovacao.com.br" target="_blank" rel="noopener">ddsinovacao.com.br</a></p>
     </div>
   </div>
 </section>
@@ -483,19 +470,13 @@ footer a{color:var(--muted)}
 
 <footer>
   <div class="wrap">
-    <span><b style="color:var(--giz)">EstudeUp</b> — seu próximo nível começa aqui. © 2026 DDS Inovação</span>
+    <span><b style="color:var(--giz)">EstudeUp</b> — seu próximo nível começa aqui.<br>Contato: <a href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener">WhatsApp (41) 99154-2931</a> · <a href="https://www.ddsinovacao.com.br" target="_blank" rel="noopener">ddsinovacao.com.br</a><br>© 2026 DDS Inovação</span>
     <span><a href="app.html">Entrar no app</a> &nbsp; <a href="oportunidades.html">Oportunidades</a> &nbsp; <a href="privacidade.html">Privacidade</a></span>
   </div>
 </footer>
 
-<a class="zap" id="pub-zap" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
-<div id="planos" hidden></div>
-<canvas id="fx-canvas" aria-hidden="true"></canvas>
+<a class="zap" href="https://wa.me/5541991542931?text=Ol%C3%A1%21%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20EstudeUp." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="config.js?v=17"></script>
-<script src="efeitos.js?v=17"></script>
-<script src="vitrine.js?v=17"></script>
-<script src="publico.js?v=17"></script>
 <script>
 (function () {
   const $ = (id) => document.getElementById(id);
@@ -618,25 +599,7 @@ footer a{color:var(--muted)}
   });
   mostrar(atual);
 
-  /* ---------- preços (os mesmos do painel de cobrança) ---------- */
-  (async function () {
-    const brl = (v) => Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
-    try {
-      const { data } = await sbPub.from('sai_billing_config').select('key,value').in('key', ['preco_escola_mensal', 'preco_escola_anual']);
-      const c = Object.fromEntries((data || []).map((r) => [r.key, Number(r.value)]));
-      if (c.preco_escola_mensal) $('lp-mensal').innerHTML = brl(c.preco_escola_mensal) + '<small> /mês</small>';
-      if (c.preco_escola_anual) $('lp-anual').innerHTML = brl(c.preco_escola_anual) + '<small> /ano</small>';
-      if (c.preco_escola_mensal && c.preco_escola_anual) {
-        const eco = Math.round((1 - c.preco_escola_anual / (c.preco_escola_mensal * 12)) * 100);
-        if (eco > 0) $('lp-economia').textContent = 'Economia de ' + eco + '% no ano.';
-      }
-    } catch (_) {}
-  })();
 })();
-function interessePatrocinio() {
-  const m = document.getElementById('f-msg');
-  if (m && !/patroc/i.test(m.value)) m.value = 'Quero patrocinar o EstudeUp. ' + m.value;
-}
 </script>
 </body>
 </html>
