@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EstudeUp</title>
+<meta name="robots" content="noindex">
+<script>
+  // estudeup.com.br/nome-da-escola → app da escola daquela escola
+  (function () {
+    var seg = location.pathname.split('/').filter(Boolean).map(function (s) { return decodeURIComponent(s); });
+    var dest = null;
+    if (!seg.length) dest = '/';
+    else if (seg[0] === 'estudeup' || seg[0] === 'saidaescola' || seg[0] === 'escola') dest = '/escola/' + location.hash;
+    else if (seg[0] === 'dds') dest = '/escola/#/dds';
+    else if (seg[0] === 'assinar' || seg[0] === 'plano') dest = '/escola/#/assinar';
+    else if (seg[0] === 'estudemais' || seg[0] === 'estudar') dest = '/' + location.hash;
+    else if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(seg[0])) dest = '/escola/#/e/' + seg.join('/');
+    if (dest) location.replace(dest);
+    else document.addEventListener('DOMContentLoaded', function () { document.getElementById('nf').hidden = false; });
+  })();
+</script>
+<style>body{font-family:system-ui,sans-serif;background:#0b1030;color:#fff;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:24px}a{color:#FFE34D}</style>
+</head><body>
+<div id="nf" hidden><h1>Página não encontrada</h1><p>Confira o endereço que a escola enviou ou <a href="/">abra o EstudeUp</a>.</p></div>
+</body></html>
